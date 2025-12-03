@@ -1,5 +1,9 @@
 <?php
 // فایل cron ساده برای اجرای workflowهای زمان‌بندی شده
+
+use App\Core\Database;
+use App\Services\TriggerService;
+
 session_start();
 
 define('ROOT_PATH', dirname(__DIR__));
